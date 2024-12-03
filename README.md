@@ -6,12 +6,12 @@ The research was carried out on the GPU4EDU server provided by Tilburg Universit
 ### 1. Data Cleaning and Exploratory Data Analysis (EDA)
   - Data cleaning to remove inconsistencies and errors.
   - Exploratory Data Analysis (EDA) to identify key patterns and trends within the dataset.
-  - 
+
 ### 2. Statement expanding with Llama 3.1
   - The code for text expanding the statement with minimal of 20 tokens with the Llama 3.1 8B parameters LLM.
 
 ### 3. Optuna Hyperparameter Optimization
-  -Used Optuna to automate the hyperparameter search.
+  - Used Optuna to automate the hyperparameter search.
 
 ### 4. Experiment 
   - One example of the test that where performed during the research.
