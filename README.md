@@ -2,11 +2,29 @@
 
 In recent months, I have been investigating the impact of statement length on the accuracy of RoBERTa and XLM-R models. This study utilized the LIAR2 dataset and involved a total of 12 experiments. The tests were conducted using the original statements, expanded statements with various feature sets, and both RoBERTa and XLM-R models.
 
-The research was conducted on the GPU4EDU server at Tilburg University. Utilizing this server allowed for efficient processing and experimentation, but it also required the project files to be organized and divided into specific components. These included:
--Data Cleaning and Exploratory Data Analysis (EDA): This stage involved preparing the data by cleaning and preprocessing it, followed by conducting an exploratory analysis to understand key patterns and distributions within the dataset.
--Experimentation Files: Examples of experiments conducted include testing various model setups, analyzing the impact of different features, and evaluating performance across diverse scenarios.
--Optuna Hyperparameter Optimization: Experiments were carried out using Optuna to fine-tune the model hyperparameters, aiming to achieve optimal performance. This process involved testing various configurations and selecting the best-performing settings.
--LIME Analysis: Local Interpretable Model-Agnostic Explanations (LIME) were used to interpret the model’s predictions, providing insights into which features contributed most significantly to specific outcomes.
-Each of these components played a crucial role in ensuring the robustness and interpretability of the research findings, leveraging the computational capabilities of GPU4EDU to handle complex and resource-intensive tasks efficiently.
+
+The research was carried out on the GPU4EDU server provided by Tilburg University. Leveraging this server enabled efficient processing and experimentation. To organize the project effectively, the files were divided into several key components:
+## 1. Data Cleaning and Exploratory Data Analysis (EDA)
+- **Objective:** Prepare and preprocess the data to ensure it was clean and ready for analysis.
+- **Steps:**
+  - Data cleaning to remove inconsistencies and errors.
+  - Exploratory Data Analysis (EDA) to identify key patterns and trends within the dataset.
+
+## 2. Experimentation Files
+- **Examples of Experiments:**
+  - Testing various model configurations and feature sets.
+  - Evaluating performance under different experimental conditions.
+
+## 3. Optuna Hyperparameter Optimization
+- **Objective:** Fine-tune model hyperparameters to maximize performance.
+- **Methodology:**
+  - Used Optuna to automate the hyperparameter search.
+  - Experimented with multiple configurations to identify the optimal setup.
+
+## 4. LIME Analysis
+- **Objective:** Interpret model predictions using Local Interpretable Model-Agnostic Explanations (LIME).
+- **Outcome:** 
+  - Gained insights into feature importance.
+  - Improved understanding of how specific features influenced the model's decisions.
 
 
