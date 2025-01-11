@@ -37,15 +37,15 @@ text_generator = pipeline(
 )
 
 def get_response(statement):
-    prompt = f"""Expand on the following statement: "{statement}". Keep the original statement and add more infornation that has the same sentiment as the statement.
-Please make a text with consecutive sentences, no bullet points or paragraphs. The text must end with a period.
+    prompt = f"""Expand on the following statement: "{statement}". Keep the original statement and add more context that has the same sentiment as the statement.
+    Make a text with consecutive sentences, no bullet points or paragraphs. The text must end with a period.
 """
 
     # Calculate token count for the statement
     statement_tokens = len(tokenizer.encode(statement, add_special_tokens=False))
 
     # Calculate 30% and 50% more than the statement length
-    min_expansion_tokens = max(int(statement_tokens * 0.3), 25)
+    min_expansion_tokens = max(int(statement_tokens * 0.3), 20)
     max_expansion_tokens = int(statement_tokens * 1.5)
 
     # Set max_new_tokens as statement length + min_expansion_tokens, capped at max_expansion_tokens
